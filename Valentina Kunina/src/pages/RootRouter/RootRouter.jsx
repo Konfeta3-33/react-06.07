@@ -9,13 +9,15 @@ import Contacts from "../Contacts";
 
 const RootRouter = () => {
   return (
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/chats/:chatId" component={Chats} />
-      <Route path="/settings" component={Settings} />
-      <Route path="/contacts" component={Contacts} />
-      <Route component={EmptyPage} />
-    </Switch>
+    <Layout>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/chats/:chatId" component={Chats} />
+        <Route path="/settings" component={Settings} />
+        <Route path="/contacts" component={Contacts} />
+        <Route component={EmptyPage} />
+      </Switch>
+    </Layout>
   );
 };
 

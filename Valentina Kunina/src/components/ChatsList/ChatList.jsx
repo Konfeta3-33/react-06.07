@@ -6,14 +6,9 @@ import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import useStyles from "../Layout/useStyles";
-import { useSelector } from "react-redux/lib/hooks/useSelector";
-import { getAllChats } from "../../selectors/chats";
 
 const ChatList = ({ open, handleDrawerClose, children }) => {
   const classes = useStyles();
-  // const allChats = useSelector(getAllChats);
-  // console.log(allChats)
-
   return (
     <Drawer
       variant="permanent"

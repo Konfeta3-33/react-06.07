@@ -2,7 +2,7 @@ import { combineReducers } from "redux";
 import chatsReducer from "./chatsReducer";
 
 const rootReducer = combineReducers({
-  chats: chatsReducer,
+  chat: chatsReducer,
 });
 
 export default rootReducer;
